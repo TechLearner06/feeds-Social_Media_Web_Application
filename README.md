@@ -1,6 +1,6 @@
-# feeds-Social-Media_Application
+# feeds-Social-Media_Web_Application
 
-Project Name: feeds-Social Media Website
+Project Name: feeds-Social_Media_Web_Application
 
 Developed a social media web application named "feeds" that allows users to interact and engage with each other through various features.
 
