@@ -1,0 +1,48 @@
+{% extends 'login-reg-base.html'%}
+
+{% block content%}
+    
+    <div id="register">
+        <div class="container">
+            <div class="row">
+                <div class="login-heading">
+                    <h4>Ready to connect? Create your account now!</h4>
+                </div>
+                
+                <form class="register-form" method="POST">
+                    {% csrf_token %}
+                    <div class="fields">
+                        <input type="text" name="username" placeholder="Enter Username" required>
+                    </div>
+                    <div class="fields">
+                        
+                        <input type="text" name="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="fields">
+                        
+                        <input type="password" name="password1" placeholder="Enter Password" required>
+                    </div>
+                    <div class="fields">
+                        
+                        <input type="password" name="password2" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="reg-btn">
+                        <button type="submit">Create Account</button>
+                    </div>
+                    
+                    <div class="error success">
+                        {% for msg in messages %}
+                        <h5>{{msg}}</h5>
+                        {% endfor %}
+                    </div>
+                    
+                </form>
+               
+                <div class="register-link">
+                    <p>Already have an account? <a href="{% url 'login' %}">Login Here</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endblock%}

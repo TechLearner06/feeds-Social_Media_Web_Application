@@ -1,0 +1,48 @@
+{% extends 'header.html'%}
+
+
+{%block content%}
+
+    <div class="profile-settings">
+        <div class="container">
+            <div class="heading">Edit Profile</div>
+            <div class="msg success">
+                {% for msg in messages %}
+                <h5>{{msg}}</h5>
+                {% endfor %}
+            </div>
+            <form class="accountform" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="dp-image-div">
+                    <label>Add Profile Picture</label>
+                    <input type="file" id="profile_pic" name="profile_img">
+                </div>
+                <div class="account-form-div">
+                    <label>Username</label>
+                    <input type="text" name="username" value="{{user.username}}">
+                    <label>Name</label>
+                    <input type="text" name="name" value="{{profile.name}}" placeholder="Enter Your Name">
+                    <label>Bio</label>
+                    <textarea id="description" name="bio" rows="4" cols="50" placeholder="Enter your Bio" required>{{profile.bio}}</textarea>
+                    
+                </div>
+                <div class="gender-div">
+                    <label>Gender</label>
+                    <input type="radio" id="female" name="gender" value="female" {% if profile.gender == 'female' %}checked{% endif %} required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male" {% if profile.gender == 'male' %}checked{% endif %} required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="others" name="gender" value="others" {% if profile.gender == 'others' %}checked{% endif %} required>
+                    <label for="others">Others</label>
+                </div>
+                <div class="submit-cancel-btn">
+                    <a href="{% url 'edit_profile' %}"><button type="button">Cancel</button></a>
+                    <button type="submit">Update</button></a>
+                </div>
+
+            
+            </form>
+        </div>
+    </div>
+
+{%endblock%}

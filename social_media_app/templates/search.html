@@ -1,0 +1,64 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feeds-search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="search-header-section">
+                    <div class="go-back">
+                        <a href="{% url 'index' %}"><i class="fa fa-arrow-left"></i></a>
+                    </div>
+                    <form action="{% url 'search' %}" method="POST">
+                        {%csrf_token%}
+                    <div class="search_bar">
+                        <input type="text" value="{{search_content}}" name="search-content" placeholder="Search for creators, posts">
+                        <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                    </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="search-feed">
+        <h6>Results for </h6>
+        
+        <div class="user-search-section">
+        {% for users in search_user_profile_list %}
+            <div class="search-results">
+                <img src="{{users.profile_img.url}}" alt="">
+                <div class="detail-section">
+                    <h4 class="user-name"><a href="{% url 'view_profile' users.user.id %}" class="text-link">{{users.user.username}}</a></h4>
+                    <h4 class="name">{{users.name}}</h4>
+                </div>
+            </div>
+
+        {% endfor%}
+        </div>
+    </div>
+
+    
+
+    <!-- Bottom Navigation for Small Screens -->
+    <div id="bottom-nav">
+        <ul id="bottommenu">
+            <li><a href="{% url 'index' %}"><i class="fa fa-home"></i></a></li>
+            <li><a href="{% url 'view_followers' user.id %}"><i class="fa fa-heart"></i></a></li>
+            <li><a href="{% url 'add_posts' %}"><i class="fa fa-plus-square-o"></i></a></li>
+            <li><a href="{% url 'search' %}"><i class="fa fa-search"></i></a></li>
+            <li><a href="{% url 'view_profile' user.id %}"><img src="{{ user.profile.profile_img.url }}" alt="" class="bottom-dp-img"></a></li>
+        </ul>
+    </div>
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
