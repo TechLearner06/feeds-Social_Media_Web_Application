@@ -1,17 +1,22 @@
 # feeds-Social-Media_Application
 
-Project Name: Feeds Social Media Website (In Progress)
-currently working
+Project Name: feeds-Social Media Website
 
+Developed a social media web application named "feeds" that allows users to interact and engage with each other through various features.
 
-Description:
-Developing a social media platform using:
+✓ Features:
+User authentication
+profile management
+user suggestions
+follow/unfollow
+post management (upload, delete, like posts)
+personalized feed display
+search functionality 
+view followers and following lists
+
+✓ Technologies: 
 Front End: HTML, CSS, and JavaScript for responsive user interface design.
 Back End: Python with Django framework for server-side functionality.
 
-Key Features:
-User authentication, profile management, and password changes.
-Social interactions: liking, commenting, sharing, and uploading posts (text and images).
-User suggestions based on interests for connecting with new users.
-Follow system to receive updates from followed users and view other user profiles.
+
 
