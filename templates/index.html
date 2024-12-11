@@ -1,0 +1,135 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header-section">
+                    <div class="logo-name">
+                        <h1>feeds</h1>
+                    </div>
+                    <form  class="search-bar" action="{% url 'search' %}" method="POST">
+                    {% csrf_token%}
+                        <input type="text" name="search-content" placeholder="Search for creators, posts">
+                        <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                    </form>
+                    <div class="new-post-button">
+                        <button class="post-btn"><a href="{% url 'add_posts' %}"><i class="fa fa-camera"></i></a></button>
+                    </div>
+                    <div class="dp_image">
+                        <a href="{% url 'view_profile' user.id %}"><img src="{{ profile.profile_img.url }}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-section">
+        <!-- User Posts Section -->
+        <div id="posts">
+            <div class="container">
+                {% for post in posts reversed %}
+                <div class="posts-section">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="post-dp-img" src="{{ post.user.profile.profile_img.url }}">
+                            <div class="name-location-div">
+                                <h5 class="profile-name"><a href="{% url 'view_profile' post.user.id %}">{{ post.user.username }}</a></h5>
+                                <h4>{{ post.location }}</h4>
+                            </div>
+                        </div>
+
+                        {% if post.image %}
+                        <a href="{{ post.image.url }}">
+                            <img src="{{ post.image.url }}" alt="" class="img-fluid">
+                        </a>
+                        {% elif post.video %}
+                        <video width="400" height="300" controls>
+                            <source src="{{ post.video.url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        {% endif %}
+
+                        <div class="actions">
+                            <div class="actions-sections">
+                                <a href="{% url 'like_post' %}?post_id={{ post.id }}" id="like-post" class="like-post"><i class="fa fa-heart"></i></a>
+                                <span id="like-count">{{ post.no_of_likes }}</span>
+                                <!--<button class="comment-icon" onclick="toggleComments('{{ post.id }}')"><i class="fa fa-comment"></i></button>-->
+                            </div>
+                            <p class="caption"><span class="profile-name"><a href="">{{ post.user.username }}</a></span> {{ post.caption }}</p>
+                        </div>
+                    </div>
+
+                    <!-- Comment Section -->
+                    <div id="comment-section-{{ post.id }}" class="comment-section" style= { "display:none"}>
+                        <h2>Comments</h2>
+                        <div id="comments-container-{{ post.id }}">
+                            {% for comment in post.comments.all %}
+                            <div class="comment">
+                                <div class="user-info">
+                                    <img src="{{ comment.user.profile.profile_img.url }}" alt="User DP">
+                                    <span class="username">{{ comment.user.username }}</span>
+                                </div>
+                                <p class="comment-text">{{ comment.content }}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <form action="{% url 'comments' post.id %}" method="POST">
+                            {% csrf_token %}
+                            <input type="text" name="content" placeholder="Add a comment...">
+                            <button type="submit">Post</button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- User Suggestion Section -->
+        <div class="user-suggestion-section">
+            <div class="container">
+                <div class="user-suggestions-div">
+                    <div class="user-suggestion-header">
+                        <h4>User Suggestions</h4>
+                    </div>
+                    <div class="user-suggestions-body">
+                        {% for suggestion in final_list %}
+                        <div class="suggestions">
+                            <div class="user-suggestions">
+                                <img src="{{  suggestion.profile_img.url }}" alt="">
+                                <h4 class="user-name">{{ suggestion.user.username}}</h4>
+                            </div>
+                            <div class="user-follow-div ">
+                                <a class="text-link" href="{% url 'view_profile' suggestion.user.id %}"><button>View Profile</button></a>
+                            </div>
+                        </div>
+                        <hr>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation for Small Screens -->
+    <div id="bottom-nav">
+        <ul id="bottommenu">
+            <li><a href="{% url 'index' %}"><i class="fa fa-home"></i></a></li>
+            <li><a href="{% url 'view_followers' user.id %}"><i class="fa fa-heart"></i></a></li>
+            <li><a href="{% url 'add_posts' %}"><i class="fa fa-plus-square-o"></i></a></li>
+            <li><a href="{% url 'search' %}"><i class="fa fa-search"></i></a></li>
+            <li><a href="{% url 'view_profile' user.id %}"><img src="{{ profile.profile_img.url }}" alt="" class="bottom-dp-img"></a></li>
+        </ul>
+    </div>
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

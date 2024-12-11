@@ -1,0 +1,45 @@
+{% extends 'header.html'%}
+
+
+{%block content%}
+
+    <div class="privacy-settings">
+        <div class="container">
+            
+            <form class="privacy-form" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="password-heading">Password and Security</div>
+                
+                <div class="privacy-form-div">
+                    <label>Old Password:</label>
+                    <input type="password" name="old_password" required>
+                    <label>New Password:</label>
+                    <input type="password" name="new_password1" required>
+                    <div class="rules">
+                        <h4>Your password can’t be too similar to your other personal information.</h4>
+                        <h4>Your password must contain at least 8 characters.</h4>
+                        <h4>Your password can’t be a commonly used password.</h4>
+                        <h4>Your password can’t be entirely numeric.</h4>
+                    </div>
+
+                    <label>Confirm Password:</label>
+                    <input type="password" name="new_password2"required>
+ 
+                </div>
+                
+                <div class="submit-cancel-btn">
+                    <a href="{% url 'privacy_settings' %}"><button type="button">Cancel</button></a>
+                    <button type="submit">Change</button></a>
+                </div>
+
+                <div class="msg success">
+                    {% for msg in messages %}
+                    <h5>{{msg}}</h5>
+                    {% endfor %}
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+{%endblock%}

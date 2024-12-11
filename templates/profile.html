@@ -1,0 +1,205 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feeds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+
+
+<div id="profile-header">
+    <div class="profile-header-container">
+
+        <div class="profile-header-flex">
+
+            <div class="go-back">
+                <a href="{% url 'index' %}"><i class="fa fa-arrow-left"></i></a>
+            </div>
+
+            {% if user_profile.user.id == request.user.id %}
+            <div class="dropdown">
+                <span class="arrow">&#9662;</span> 
+                <span class="username">{{user.username}}</span>
+                
+                <div class="dropdown-content">
+                    <a href="{% url 'privacy_settings'%}">Privacy</a>
+                    <a href="{% url 'logout' %}">Logout</a>
+                </div>
+               
+            </div>
+            {% endif%}
+
+        </div>
+
+        
+    </div>
+</div>
+
+
+<!--profile details-->
+
+<div id="profile-page">
+
+    <div id="profile">
+        <div class="container">
+            <div class="row">
+            
+                <div class="profile-details">
+                    <div class="profile-image">
+                        <img src="{{user_profile.profile_img.url}}" alt="">
+                    </div>
+
+                    <div class="p-name">
+                        <h2>{{user_profile.name}}</h2>
+                        <p>{{user_profile.bio}}</p>
+                    </div>
+                </div>
+
+
+                <div class="followers-details">
+                    <div class="posts-no">
+                        <h2>{{user_post_len}}</h2>
+                        <h1>posts</h1>
+                    </div>
+                    <div class="followers-no">
+                        <a href="{% url 'view_followers' user_profile.user.id %}">
+                        <h2>{{no_of_followers}}</h2>
+                        <h1>followers</h1>
+                        </a>
+                    </div>
+                    <div class="following-no">
+                        <a href="{% url 'view_followers' user_profile.user.id %}">
+                        <h2>{{no_of_following}}</h2>
+                        <h1>following</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+                {% if user_profile.user.id == request.user.id %}
+                <div class="edit_profile-div">
+                    <a href="{% url 'edit_profile' %}"><button>Edit Profile</button></a>
+                </div>
+                {% else %}
+                <form method="POST" action="/followers">
+                    {% csrf_token%}
+                <div class="follow-div">
+                    <input type="hidden" value="{{user.id}}" name="follower">
+                    <input type="hidden"  value="{{user_object.id}}" name="user">
+                    <button>{{button_text}}</button></a>
+
+                </div>
+                <form>
+                {%endif%}
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- user posts-->
+
+    
+    <div id="user-posts">
+        <div class="container">
+
+            <h5 class="feeds-heading">posts</h5>
+            <div class="posts-section">
+                {% if user_post_len >= 1 %}
+
+                    {% for post in user_posts reversed%}
+
+                    
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="post-dp-img" src="{{post.user.profile.profile_img.url}}">
+                            <div class="name-location-div">
+                                <h5 class="profile-name"><a href="{% url 'view_profile' post.user.id %}">{{post.user.username}}</a></h5>
+                                <h4>{{post.location}}</h4>
+                               
+                            </div>
+                            
+                            
+                        </div>
+
+
+                        {% if post.image %}
+                        <a href="{{post.image.url}}">
+                        <img src="{{post.image.url}}" alt="" class="img-fluid">
+                        </a>
+
+                        {% elif post.video %}
+                        <video width="400" height="300" controls>
+                            <source src="{{ post.video.url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        {% endif %}
+
+
+
+                        <div class="actions">
+                            <div class="actions-section">
+                                <div class="like">
+                                    <a href="{% url 'like_post' %}?post_id={{post.id}}"  id="like-post" class="like-post">
+                                    <i class="fa fa-heart"></i></a>
+                                    <span id="like-count">{{post.no_of_likes}}</span>
+                                </div>
+                                <!--<button><i class="fa fa-comment"></i></button>-->
+                                {% if user_profile.user.id == request.user.id %}
+                                <div class="delete-post-div">
+                                   <h4 class="delete-post"><a href="{% url 'delete_post' post.id %}" class="link">Delete Post</a></h4>
+                                </div>
+                                {%endif%}
+                            </div>
+
+                            <p class="caption"><span class="profile-name">{{post.user.username}}</span>{{post.caption}}</p> 
+                        </div>
+                    </div>
+
+                {% endfor%}
+
+                
+            {% else %}
+
+                <h5 class="blackclr">No posts</h5>
+
+            {% endif%}
+
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>
+
+
+
+
+
+     <!--bottom navigation for small screens-->
+    <div id="bottom-nav">
+        <ul id="bottommenu">
+            <li><a href="{% url 'index' %}"><i class="fa fa-home"></i></a></li>
+            <li><a href="{% url 'view_followers' user.id %}"><i class="fa fa-heart"></i></a></li>
+            <li><a href="{% url 'add_posts' %}"><i class="fa fa-plus-square-o"></i></a></li>
+            <li><a href=""><i class="fa fa-search"></i></a></li>
+            <li><a href="{% url 'view_profile' user.id %}"><img src="{{user_profile.profile_img.url}}" alt="" class="bottom-dp-img"></a></li>
+            
+            
+        </ul>
+    </div>
+
+<script src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>
+   
+
+
+ 

@@ -1,0 +1,61 @@
+{% extends 'header.html'%}
+
+{% block content%}
+
+
+<div class="friendsdetails">
+    
+    <div class="following-titles">
+        <p class="following-links active-link" onclick="opentab('following',event)">Following</p>
+        <p class="following-links " onclick="opentab('followers',event)">Followers</p>
+    </div>
+
+    <!--following users-->
+
+    <div class="following-contents active-tab"  id="following"> 
+    {%for following in following_user_list%}
+        <div class="following-section">
+            <img src="{{following.following_user.profile.profile_img.url}}" alt="">
+            <h4 class="user-name"><a href="{% url 'view_profile' following.following_user.id %}" class="text-link">{{following.following_user.username}}</a></h4>
+        </div>
+    {% endfor%}
+    </div>
+
+     <!--followers-->
+    
+    <div class="following-contents"  id="followers">
+        {%for follower in followers_list%}
+        <div class="following-section">
+            <img src="{{follower.follower.profile.profile_img.url}}" alt="">
+            <h4 class="user-name"><a href="{% url 'view_profile' follower.follower.id %}" class="text-link">{{follower.follower.username}}</a></h4>
+        </div>
+        {%endfor%}
+    </div>
+
+</div>
+
+   
+
+
+
+
+
+<!--bottom navigation for small screens-->
+<div id="bottom-nav">
+    <ul id="bottommenu">
+        <li><a href="{% url 'index' %}"><i class="fa fa-home"></i></a></li>
+        <li><a href="{% url 'view_followers' user.id %}"><i class="fa fa-heart"></i></a></li>
+        <li><a href="{% url 'add_posts' %}"><i class="fa fa-plus-square-o"></i></a></li>
+        <li><a href=""><i class="fa fa-search"></i></a></li>
+        <li><a href="{% url 'view_profile' user.id %}"><img src="{{user_profile.profile_img.url}}" alt="" class="bottom-dp-img"></a></li>
+    </ul>
+</div>
+
+
+        {% endblock%}
+
+
+    
+
+
+

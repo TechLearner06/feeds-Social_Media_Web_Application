@@ -1,0 +1,4641 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;   
+}
+
+.link{
+    text-decoration: none;
+    color:grey;
+    font-size: 12px;
+}
+
+    
+
+
+.text-bold{
+    font-weight: 500;
+}
+
+.text-muted{
+  color:grey;  
+}
+
+
+.text-link{
+    text-decoration: none;
+    color: white;
+}
+
+.blackclr{
+    color:royalblue;
+    font-size: 20px;
+}
+
+.msg{
+    color:green;
+}
+
+
+
+.display-img{
+    width:300px;
+    height:300px;
+}
+
+/* base header */
+
+#header-common{
+    background-color:#f2f2f2;
+    width:100%;
+    color: white;
+    position: fixed;
+    top: 0%;
+}
+
+.header-container{
+    padding:10px 40px;
+
+}
+
+
+
+.common-header-section{
+    display: flex;
+
+}
+
+.go-back a{
+    text-decoration: none;
+    color:blue;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/* login register header */
+
+
+.header-web{
+    background-color:#ccc;
+}
+
+.logo-section {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+
+.logo-section h4{
+    color:royalblue;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+/* login */
+
+#login{
+    background-color:#ccc;
+    /*background-image: url('../images/bg1.jpg');*/    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-height: 680px;
+    
+}
+
+
+
+#login .container{
+    padding: 10px;
+    width:400px;
+    height:320px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-form .fields{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+.login-form input{
+    width:300px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color:#f2f2f2;
+    color: black;
+    
+ 
+}
+
+
+
+
+.login-heading{
+    padding-top: 10px;
+
+}
+
+
+.login-heading h4{
+    font-size: 15px;
+    text-align:center;
+    color:royalblue;
+    font-family:cursive;
+}
+
+
+
+.login-btn{
+    text-align: center;
+    margin-top:20px;
+    
+    
+
+}
+
+
+
+.login-btn button{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color:royalblue;
+    color:white;
+    font-weight: 200;
+    cursor: pointer;
+    width:300px;
+    height:30px;
+    
+}
+
+
+
+
+.forgot-pswd {
+    margin: 15px;
+    text-align: right;
+    
+}
+
+.forgot-pswd a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.register-link{
+    margin: 10px;
+    text-align: center;
+}
+
+.register-link a{
+    color:royalblue;
+    text-decoration: none;
+}
+
+
+
+/* register */
+
+#register{
+    background-color: #ccc;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+    min-height: 680px;
+}
+
+#register .container{
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width:500px;
+    height:450px;
+    background-color:white;
+    
+    
+}
+
+.register-link{
+    text-align: center;
+}
+
+.register-form{
+   
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 5px;   
+    
+}
+
+
+.register-form .fields{
+    display: flex;
+   justify-content:center;
+   align-items: center;
+    margin-top: 10px;
+    
+}
+
+.register-form input{
+    margin-left: 10px;
+    width:400px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 10px;
+    background-color:#f2f2f2;
+    color: black;
+    
+}
+
+
+.reg-btn{
+    text-align: center;
+    margin-top:20px;
+    margin-left: 5px;
+    
+    
+
+}
+
+
+
+
+
+.reg-btn button{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color:royalblue;
+    color:white;
+    font-weight: 200;
+    cursor: pointer;
+    width:400px;
+    height:30px;
+    
+}
+.register-link{
+    color: black;
+}
+
+
+/*home page*/
+
+
+#header{
+    background-color:#f2f2f2;
+    width:100%;
+    height:60px;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    
+        
+}
+
+.container{
+    padding:10px 40px;
+}
+
+
+
+
+.logo-name h1{
+    color:#4169e1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+
+
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    margin-left:100px;
+    width:350px;
+    height:35px;
+    border-radius: 10px;
+    background-color:white;
+    
+    
+}
+
+.search-bar ::placeholder{
+    color: #4169e1;
+}
+
+
+
+.search-bar input{
+    
+    background: transparent;
+    border: none;
+    outline:none;
+    width:100%;
+    color: black;
+    border-radius: 10px;
+    margin-left:10px;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+
+.search-btn{
+    border:none;
+    outline:none;
+    background-color: royalblue;
+    cursor: pointer;
+    width:60px;
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.search-btn .fa{
+    font-size: 15px;
+    color: white;
+}
+
+.username{
+    font-size: 20px;
+}
+
+
+
+.new-post-button .post-btn{
+    border: none;
+    outline: none;
+    
+
+}
+
+
+
+
+
+
+.post-btn .fa{
+    
+    font-size: 20px;
+    color:royalblue;
+
+}
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+.success{
+    color: mediumaquamarine;
+    padding: 10px;
+    
+    
+}
+
+.dp_image img{
+    width: 35px; /* Set the width of your button */
+    height: 35px; /* Set the height of your button */
+    cursor: pointer;
+    border-radius: 50px;
+    background-size:cover;
+    
+    
+}
+
+
+
+
+
+/* account settings page*/
+
+.profile-settings{
+    margin:0;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ccc;
+    width:100%;
+}
+
+.profile-settings .container{
+    
+    padding:10px;
+    
+      
+}
+
+
+.heading{
+    color:blue;
+    font-size: 20px;
+    padding:5px;
+    margin-right: 200px;
+
+}
+
+
+
+
+
+
+.account-form-div{
+    border-radius: 10px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width:400px;
+    min-height: 300px;;
+    background-color:white;
+    
+}
+
+
+
+
+
+.account-form-div label{
+    font-size: 15px;
+    color: royalblue;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.account-form-div input{
+    height:40px;
+    border:none;
+    background-color: #f2f2f2;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    color:black;
+}
+
+.account-form-div textarea{
+    height:40px;
+    border:none;
+    background-color: #f2f2f2;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    color:black;
+
+}
+
+
+
+.dp-image-div{
+    background-color:white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width:400px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.dp-image-div label{
+    font-size: 15px;
+    color: royalblue;
+    margin-bottom: 10px;
+}
+
+
+.dp-image-div input{
+    border:none;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+
+
+
+.gender-div{
+    background-color:white;
+    margin-top: 20px;
+    padding:20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width:400px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.gender-div label{
+    font-size: 15px;
+    color: royalblue;
+    margin-right: 10px;
+   
+    
+}
+
+label ,#female,#male,#others{
+    color:black;
+    
+}
+
+.submit-cancel-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px; 
+    margin-right: 50px;  
+}
+
+.submit-cancel-btn a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+
+.submit-cancel-btn button{
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height: 30px;
+    margin-right: 10px;
+    color:white;
+    
+}
+
+
+.submit-cancel-btn button:hover{
+
+    background-color:blue;
+    cursor: pointer;
+    color:white;
+}
+
+
+
+
+
+/* password settings section*/
+
+.privacy-settings{
+    margin:0;
+    padding:80px;
+    background-color: #ccc;
+    color:black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.password-heading{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
+.privacy-form-div{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    background-color:white;
+    
+}
+
+
+
+.privacy-form-div label{
+    color: royalblue;
+    margin-top: 10px;
+}
+
+
+.privacy-form-div input{
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.rules h4{
+    margin-left: 20px;
+    text-align:left;
+    font-size: 12px;
+    font-weight: 300;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+/* add-post-form */
+
+
+.new-post-form{
+    margin: 0;
+    padding:80px;
+    background-color:#ccc;
+    min-height: 750px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+
+.add-post-form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.post-form h1{
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.add-post-form label{
+    color: royalblue;
+    margin-bottom: 10px;
+   
+    
+
+}
+
+
+.add-post-form input{
+    border:none;
+    outline:none;
+    width:100%;
+    height: 40px;
+    background-color: #f2f2f2;
+    padding:10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: black;
+}
+
+
+.add-post-form textarea{
+    background-color: #f2f2f2;
+    width:100%;
+    border-radius: 10px;
+    border: none;
+    padding:10px;
+    color: black;
+    margin-top: 20px;
+}
+
+.share-btn{
+    margin-top: 20px;
+    background-color:blue;
+    color:white;
+    padding: 10px;
+    border:none;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 15px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.share-btn:hover{
+    cursor: pointer;
+    background-color: darkblue;
+
+    
+}
+
+.cancel-btn{
+    margin-top: 20px;
+    background-color:#ccc;
+    padding: 10px;
+    border:none;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 15px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    
+
+}
+
+.cancel-btn a{
+    text-decoration: none;
+    
+
+}
+
+
+.cancel-btn:hover{
+    cursor: pointer;
+
+    
+}
+
+
+
+/* posts section */
+
+.body-section{
+    background-color:#ccc;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#posts{
+    flex-basis:50%;
+    padding:100px;
+    min-height: 800px;
+    overflow: hidden;
+   
+}
+
+#posts:hover{
+    overflow: hidden;
+}
+
+#posts .container{
+    padding: 0px;
+}
+
+#posts .container{
+    overflow: hidden;
+}
+
+
+.posts-section{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    margin-left: 100px;
+    
+}
+
+
+
+
+.user-suggestion-section{
+    flex-basis: 50%;
+    margin-left: 800px;
+    position: fixed;
+    overflow: auto;
+   
+    
+    
+}
+
+.user-suggestions-div{
+    margin-top:130px;
+    width:350px;
+    min-height:400;
+    background-color:white;
+   
+}
+    
+
+.user-suggestion-header{
+    padding:10px;
+    background-color:royalblue;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    
+
+}
+
+.user-suggestion-header h4{
+    margin-left: 20px;
+    color:white;
+    font-size: 17px;
+    
+}
+
+
+.user-suggestions-body{
+    padding:15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.suggestions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+
+.user-suggestions{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-suggestions .user-name{
+    margin-left: 10px;
+    color:black;
+}
+
+
+.user-suggestions img{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+.card{
+    width:450px;
+    margin-bottom: 5px;
+    background-color:#f2f2f2;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+}
+
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    
+}
+
+
+
+
+
+.card-header .post-dp-img{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.name-location-div{
+   display:flex;
+   flex-direction: column;
+   justify-content: left;
+   padding-left: 13px;
+   
+}
+
+.name-location-div h4{
+    text-align: left;
+    color: black;
+    font-size: 10px;
+    margin-left: 5px;
+
+}
+
+
+.profile-name{
+    width:500px;
+    margin-bottom: 4px;
+    text-align: left;
+    margin-right: 8px;
+    
+
+    
+}
+ 
+.profile-name a{
+    text-decoration: none;
+    color:royalblue;
+}
+
+
+
+
+
+.profile-name span{
+    border:1px solid black;
+    color:white;
+    margin-left: 10px;
+    padding:5px;
+    border-radius: 5px;
+   
+
+}
+
+
+
+
+
+
+
+
+.card img{
+    width:450px;
+    height:350px;
+   
+
+}
+.actions{
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: left;
+
+}
+
+.actions-section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+
+
+
+.actions-section a{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    
+   
+}
+
+
+
+.actions-section button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+
+
+
+.caption {
+    
+    margin-top: 10px;
+    font-size:15px;
+    text-align: left;
+    color: black;
+}
+
+
+/* js interactive features  - like post*/ 
+
+#like-post{
+    color:black;
+    margin-right:1px;
+
+}
+
+
+
+#like-post .liked{
+    color:red;
+}
+
+
+
+.actions-section .fa{
+    font-size: 20px;
+    margin-right: -10px;
+}
+
+
+
+.user-follow-div button{
+    text-decoration: none;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:84px;
+    height: 24px;
+    font-size: 12px;
+    font-family:monospace;
+    cursor: pointer;
+}
+
+
+.user-follow-div button:hover{
+    background-color: darkblue;
+    border: none;
+}
+
+/* profile */
+
+#profile-header{
+    background-color:#f9f9f9;
+    width:100%;
+    color: white;
+    position: fixed;
+    top: 0%;
+}
+
+.profile-header-container{
+    padding:10px 40px;
+    
+    
+
+}
+
+
+
+.profile-header-flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* Style the dropdown content (hidden by default) */
+
+
+.dropdown{
+    cursor: pointer;
+    margin-right: 40px;
+    color: darkblue;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    
+    min-width: 130px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index:1;
+    
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    background-color: #f9f9f9;
+    color: royalblue;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    
+    text-align: center;
+
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+
+
+
+
+#profile-page{
+    margin:0;
+    padding:40px 0px 0 70px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+
+#profile{ 
+    margin-top: 30px;
+    flex-basis: 30%;
+    background-color: #f2f2f2;
+    width:350px;
+    min-height: 600px; 
+    position: fixed; 
+    box-sizing: border-box;
+    color: black; 
+    padding: 10px;
+    padding-top: 40px;
+
+    
+    
+}
+
+
+#user-posts{
+    margin-left: 400px;
+    flex-basis: 70%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+
+#user-posts:hover{
+    overflow: auto;
+}
+
+
+
+.profile-details{
+    justify-content: center;
+    display: flex;
+    flex-direction:column ;
+    align-items: center; 
+    padding: 10px;  
+}
+
+
+
+.profile-image img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+
+
+.p-name{
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+.p-name p{
+    margin-top: 10px;
+}
+
+
+.followers-details{
+    margin-left: 15px;
+    margin-top: 30px;
+    display:flex;
+    align-items: center;   
+    justify-content: center;
+}
+
+
+.followers-details a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.posts-no , .followers-no , .following-no{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 9px;
+    color: black; 
+}
+
+
+.posts-no h2 , .followers-no h2, .following-no h2{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    
+
+}
+
+
+.follow-div{
+    
+    margin-top: 30px;
+}
+
+.follow-div a{
+    text-decoration: none;
+    
+    
+    
+}
+
+
+.follow-div button{
+    text-decoration: none;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:250px;
+    height: 30px;
+    font-size: 12px;
+    font-family:monospace;
+    cursor: pointer;
+}
+
+
+.follow-div button:hover{
+    background-color: darkblue;
+    border: none;
+}
+
+
+.edit_profile-div {
+    margin-top: 30px;
+    
+}
+
+
+.edit_profile-div a{
+    text-decoration: none;
+}
+
+
+
+.edit_profile-div button{
+        text-decoration: none;
+        background-color: royalblue;
+        border: none;
+        outline: none;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:250px;
+        height: 40px;
+        font-size: 12px;
+        font-family:monospace;
+        cursor: pointer;
+        
+    }
+
+.edit_profile-div button:hover{
+    background-color: blue;
+   
+
+}
+
+
+.feeds-heading{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: royalblue;
+}
+
+
+
+
+
+
+/* friendlist */
+
+
+
+
+.friendsdetails{
+   
+    padding:60px 100px;
+    background-color: #ccc;
+    flex-basis: 40%;
+    text-align: left;
+    overflow:hidden;
+    overflow-x: hidden;
+    height: 750px;
+    
+    
+    
+
+    
+}
+
+.friendsdetails:hover{
+    overflow-y: auto;
+}
+
+
+
+
+.following-titles{
+    display: flex;
+    margin:20px 0 40px;
+    
+    
+}
+
+.following-titles p{
+    font-weight: bold;
+    margin-right: 110px;
+    color:darkblue;
+}
+
+
+.following-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.following-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color:royalblue;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+
+.following-links.active-link::after{
+    width:100%;
+}
+
+
+.following-contents{
+    display: none;
+}
+
+.following-contents.active-tab{
+    display:block;
+}
+
+.following-section h4 a{
+    color:black;
+}
+
+
+
+.following-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; /* Align items vertically at the center */
+}
+
+.following-section img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%; /* To make the image circular */
+    margin-right: 10px; /* Add some space between the image and the text */
+    border: 2px solid blue;
+}
+
+
+
+
+
+/* search */
+
+.search-header-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+
+.search_bar{
+    margin-left: 45px;
+    background-color: white;
+    height: 35px;
+    border-radius: 10px;
+    
+
+
+}
+
+.search_bar input{
+    width:300px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+
+.search-feed{
+    padding: 100px;
+    height: 720px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+.search-feed h6{
+    font-size: 20px;
+    color: gray;
+
+
+}
+
+.user-search-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-results{
+    margin-top: 5px;
+    margin-left: 30px;
+    width:500px;
+    height: 70px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding:20px;
+    background-color:white;
+
+}
+
+.search-results img{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.detail-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-section  h4 a{
+    margin-left: 20px;
+    color:black;
+} 
+
+
+.detail-section .name{
+    margin-left: 25px;
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+    
+
+}
+
+
+
+/* comments */
+
+/* Style for the comment modal */
+
+
+
+.comment-section {
+    background-color: #333333;
+    margin-top: 65px; /* Adjust margin top as needed */
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initial position, off the screen */
+    width: 300px;
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out; /* Smooth transition effect */
+    overflow-y: auto;
+    padding: 10px;
+    color: white;
+}
+
+.comment {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.comment-text {
+    margin-left: 10px;
+    color: #ccc; /* Example: adjust text color */
+}
+
+.comment input[type="text"] {
+    width: calc(100% - 60px); /* Adjust width based on button and padding */
+    padding: 8px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ccc; /* Example: add border for input */
+    border-radius: 5px;
+}
+
+.comment button {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.comment button:hover {
+    background-color: darkred; /* Example: darken color on hover */
+}
+
+
+
+
+
+
+/* bottom nav styles for small screens */
+
+#bottom-nav{
+    display:none;
+}
+
+
+
+.new-post-button{
+    margin-left:auto;
+    margin-right: 50px;
+}
+
+
+
+.post-btn a{
+    text-decoration: none;
+    color:black;
+    margin-right: 5px;
+
+}
+
+
+
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width:600px){
+
+
+    
+/* base header */
+
+#header-common{
+    background-color:#f2f2f2;
+    width:100%;
+    height:40px;
+    color: white;
+    position: fixed;
+    top: 0%;
+}
+
+.header-container{
+    padding:10px 40px;
+
+}
+
+
+
+.common-header-section{
+    display: flex;
+
+}
+
+.go-back a{
+    text-decoration: none;
+    color:blue;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/* login register header */
+
+
+.header-web{
+    background-color:#ccc;
+}
+
+.logo-section {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+
+.logo-section h4{
+    color:royalblue;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+/* login */
+
+#login{
+    background-color:#ccc;
+    /*background-image: url('../images/bg1.jpg');*/    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-height: 620px;
+    
+}
+
+
+
+#login .container{
+    padding: 10px;
+    width:320px;
+    height:250px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-form .fields{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+    align-items: center;
+}
+
+
+.login-form input{
+    width:250px;
+    height: 30px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color:#f2f2f2;
+    color: black;
+    
+ 
+}
+
+
+
+
+.login-heading{
+    padding-top: 10px;
+
+}
+
+
+.login-heading h4{
+    font-size: 13px;
+    text-align:center;
+    color:royalblue;
+    font-family:cursive;
+}
+
+
+
+.login-btn{
+    text-align: center;
+    margin-top:10px;
+    
+    
+
+}
+
+
+
+.login-btn button{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color:royalblue;
+    color:white;
+    font-weight: 200;
+    cursor: pointer;
+    width:250px;
+    height:30px;
+    
+}
+
+
+
+
+.forgot-pswd {
+    margin: 12px;
+    text-align: right;
+    
+}
+
+.forgot-pswd a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.register-link{
+    margin: 10px;
+    text-align: center;
+}
+
+.register-link a{
+    color:royalblue;
+    text-decoration: none;
+}
+
+
+
+/* register */
+
+#register{
+    background-color: #ccc;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+    min-height: 620px;
+}
+
+#register .container{
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width:310px;
+    height:400px;
+    background-color:white;
+    
+    
+}
+
+.register-link{
+    text-align: center;
+}
+
+.register-form{
+   
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 5px;   
+    
+}
+
+
+.register-form .fields{
+    display: flex;
+   justify-content:center;
+   align-items: center;
+    margin-top: 10px;
+    
+}
+
+.register-form input{
+    margin-left: 10px;
+    width:280px;
+    height: 30px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 10px;
+    background-color:#f2f2f2;
+    color: black;
+    
+}
+
+
+.reg-btn{
+    text-align: center;
+    margin-top:10px;
+    margin-left: 5px;
+    
+    
+
+}
+
+
+
+
+
+.reg-btn button{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color:royalblue;
+    color:white;
+    font-weight: 200;
+    cursor: pointer;
+    width:280px;
+    height:30px;
+    
+}
+.register-link{
+    color: black;
+}
+
+
+/*home page*/
+
+
+#header{
+    background-color:#f2f2f2;
+    width:100%;
+    height:60px;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    
+        
+}
+
+.container{
+    padding:10px 40px;
+}
+
+
+
+
+.logo-name h1{
+    color:#4169e1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    margin-left:100px;
+    width:350px;
+    height:35px;
+    border-radius: 10px;
+    background-color:white;
+    
+    
+}
+
+.search-bar ::placeholder{
+    color: #4169e1;
+}
+
+
+
+.search-bar input{
+    
+    background: transparent;
+    border: none;
+    outline:none;
+    width:100%;
+    color: black;
+    border-radius: 10px;
+    margin-left:10px;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+
+.search-btn{
+    border:none;
+    outline:none;
+    background-color: royalblue;
+    cursor: pointer;
+    width:60px;
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.search-btn .fa{
+    font-size: 15px;
+    color: white;
+}
+
+.new-post-button {
+    display: none;
+}
+
+/*
+.new-post-button .post-btn{
+    border: none;
+    outline: none;
+    
+
+}
+
+
+
+.post-btn .fa{
+
+    margin-left: 10px;
+    font-size: 20px;
+    color:royalblue;
+
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+*/
+
+.success{
+    color: mediumaquamarine;
+    padding: 10px;
+    
+    
+}
+
+.dp_image{
+    display: none;
+}
+
+
+.bottom-dp-img{
+    
+    width: 30px; /* Set the width of your button */
+    height: 30px; /* Set the height of your button */
+    cursor: pointer;
+    border-radius: 50px;
+    background-size:cover;
+    
+    
+}
+
+
+
+
+
+/* account settings page*/
+
+.profile-settings{
+    margin:0;
+    padding: 80px 40px 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ccc;
+    width:100%;
+    height: 680px;
+}
+
+.profile-settings .container{
+    
+    padding:10px;
+    
+      
+}
+
+
+.heading{
+    color:blue;
+    font-size: 12px;
+    margin-right: 250px;
+
+}
+
+
+
+
+
+
+.account-form-div{
+    border-radius: 10px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width:350px;
+    height: 250px;
+    background-color:white;
+    
+}
+
+
+
+
+
+.account-form-div label{
+    font-size: 12px;
+    color: royalblue;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.account-form-div input{
+    height:40px;
+    border:none;
+    background-color: #f2f2f2;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    color:black;
+}
+
+.account-form-div textarea{
+    height:40px;
+    border:none;
+    background-color: #f2f2f2;
+    padding:10px;
+    border-radius: 10px;
+    outline: none;
+    color:black;
+
+}
+
+
+
+.dp-image-div{
+    background-color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width:350px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.dp-image-div label{
+    font-size: 12px;
+    color: royalblue;
+    margin-bottom: 10px;
+}
+
+
+.dp-image-div input{
+    border:none;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+
+
+
+.gender-div{
+    background-color:white;
+    margin-top: 10px;
+    padding:20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width:350px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.gender-div label{
+    font-size: 15px;
+    color: royalblue;
+    margin-right: 10px;
+   
+    
+}
+
+label ,#female,#male,#others{
+    color:black;
+    
+}
+
+.submit-cancel-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px; 
+    margin-right: 50px;  
+}
+
+.submit-cancel-btn a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+
+.submit-cancel-btn button{
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height: 30px;
+    margin-right: 10px;
+    color:white;
+    
+}
+
+
+.submit-cancel-btn button:hover{
+
+    background-color:blue;
+    cursor: pointer;
+    color:white;
+}
+
+
+
+
+
+/* password settings section*/
+
+.privacy-settings{
+    margin:0;
+    padding:80px;
+    background-color: #ccc;
+    color:black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.password-heading{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
+.privacy-form-div{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    background-color:white;
+    
+}
+
+
+
+.privacy-form-div label{
+    color: royalblue;
+    margin-top: 10px;
+}
+
+
+.privacy-form-div input{
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    width: 300px;
+    height: 30px;
+    padding: 20px;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.rules h4{
+    margin-left: 20px;
+    text-align:left;
+    font-size: 12px;
+    font-weight: 300;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+/* add-post-form */
+
+
+.new-post-form{
+    margin: 0;
+    padding:70px;
+    background-color:#ccc;
+    min-height: 720px;
+    display: flex;
+    justify-content:center;
+}
+
+
+.add-post-form{
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.post-form h1{
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.add-post-form label{
+    color: royalblue;
+    margin-bottom: 10px;
+   
+    
+
+}
+
+
+.add-post-form input{
+    border:none;
+    outline:none;
+    width:100%;
+    height: 40px;
+    background-color: #f2f2f2;
+    padding:10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: black;
+}
+
+
+.add-post-form textarea{
+    background-color: #f2f2f2;
+    width:100%;
+    border-radius: 10px;
+    border: none;
+    padding:10px;
+    color: black;
+    margin-top: 20px;
+}
+
+.share-btn{
+    margin-top: 20px;
+    background-color:blue;
+    color:white;
+    padding: 10px;
+    border:none;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 15px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.share-btn:hover{
+    cursor: pointer;
+    background-color: darkblue;
+
+    
+}
+
+.cancel-btn{
+    margin-top: 20px;
+    background-color:#ccc;
+    padding: 10px;
+    border:none;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 15px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    
+
+}
+
+.cancel-btn a{
+    text-decoration: none;
+    
+
+}
+
+
+.cancel-btn:hover{
+    cursor: pointer;
+
+    
+}
+
+
+
+/* posts section */
+
+.body-section{
+    background-color:#ccc;
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    
+    
+}
+
+#posts{
+    margin-top:80px;
+    padding: 1px;
+    overflow: scroll;
+    padding-bottom: 70px;
+   
+}
+
+#posts:hover{
+    overflow: auto;
+}
+
+
+
+
+
+
+
+.posts-section{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    margin-left: 0;
+    
+}
+
+
+
+
+.user-suggestion-section{
+    display: none;
+   
+    
+    
+}
+/*
+.user-suggestions-div{
+    margin-top:130px;
+    width:350px;
+    min-height:400;
+    background-color:white;
+   
+}
+    
+
+.user-suggestion-header{
+    padding:10px;
+    background-color:royalblue;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    
+
+}
+
+.user-suggestion-header h4{
+    margin-left: 20px;
+    color:white;
+    font-size: 17px;
+    
+}
+
+
+.user-suggestions-body{
+    padding:15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.suggestions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+
+.user-suggestions{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-suggestions .user-name{
+    margin-left: 10px;
+    color:black;
+}
+
+
+.user-suggestions img{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+
+
+*/
+
+  
+.nav-items .fa{
+    display: none;
+}
+
+
+#bottom-nav{
+    width:100%;
+    height:50px;
+    display:block;
+    padding:10px;
+    background-color:royalblue ; 
+    position: fixed;  
+    bottom: 0;
+}
+
+#bottommenu{
+    list-style: none;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+     
+}
+
+#bottommenu li{
+    margin-left: 10px;
+    margin-right: 10px;
+
+  
+}
+
+#bottommenu li a{
+    
+    color:white;
+}
+
+#bottommenu .fa{
+    font-size: 20px;
+}
+
+
+
+.card{
+    width:370px;
+    margin-bottom: 5px;
+    background-color:#f2f2f2;
+    text-align: center;
+    
+    
+}
+
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    border-radius: 0;
+    
+}
+
+
+
+
+
+.card-header .post-dp-img{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.name-location-div{
+   display:flex;
+   flex-direction: column;
+   justify-content: left;
+   padding-left: 13px;
+   
+}
+
+.name-location-div h4{
+    text-align: left;
+    color: black;
+    font-size: 10px;
+    margin-left: 5px;
+
+}
+
+
+.profile-name{
+    width:500px;
+    margin-bottom: 4px;
+    text-align: left;
+    margin-right: 8px;
+    
+
+    
+}
+ 
+.profile-name a{
+    text-decoration: none;
+    color:royalblue;
+}
+
+
+
+
+
+.profile-name span{
+    border:1px solid black;
+    color:white;
+    margin-left: 10px;
+    padding:5px;
+    border-radius: 5px;
+   
+
+}
+
+
+
+.card img{
+    width:370px;
+    height:300px;
+   
+
+}
+.actions{
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: left;
+
+}
+
+
+.actions-section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+}
+
+
+
+
+.actions-section a{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+.actions-section button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+
+
+
+.caption {
+    
+    margin-top: 10px;
+    font-size:15px;
+    text-align: left;
+    color: black;
+}
+
+
+/* js interactive features  - like post*/ 
+
+#like-post{
+    color:black;
+    margin-right:1px;
+
+}
+
+
+
+#like-post .liked{
+    color:red;
+}
+
+
+
+.actions-section .fa{
+    font-size: 20px;
+    margin-right: -10px;
+}
+
+
+
+.user-follow-div button{
+    text-decoration: none;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:80px;
+    height: 20px;
+    font-size: 12px;
+    font-family:monospace;
+    cursor: pointer;
+}
+
+
+.user-follow-div button:hover{
+    background-color: darkblue;
+    border: none;
+}
+
+/* profile */
+
+#profile-header{
+    background-color:#f9f9f9;
+    width:100%;
+    color: white;
+    position: fixed;
+    top: 0%;
+    z-index:3;
+}
+
+.profile-header-container{
+    padding:10px 40px;
+    
+    
+
+}
+
+
+
+.profile-header-flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* Style the dropdown content (hidden by default) */
+
+
+.dropdown{
+    cursor: pointer;
+    margin-right: 40px;
+    color: darkblue;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    background-color: #f9f9f9;
+    color: royalblue;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    
+    text-align: center;
+
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+
+
+
+
+#profile-page{
+    padding:0px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+#profile{ 
+    position: fixed; 
+    box-sizing: border-box;
+    color: black; 
+    z-index:2;
+    top:0;
+    width:100%;
+    min-height: 150px;
+    padding: 0px;
+    margin-top: 40px;    
+    
+}
+
+#profile .container{
+    padding:2px;
+}
+
+
+
+#user-posts{
+    margin-top: 180px;
+    margin-left:0px;
+    overflow: auto; 
+    padding-bottom: 50px;
+    
+}
+
+#user-posts .container{
+    padding:2px;
+}
+
+
+
+.profile-details{
+    display: flex;
+    flex-direction:column ;  
+}
+
+
+#profile .row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.profile-image img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+
+
+.p-name{
+    font-size: 10px;
+    text-align: center;
+
+}
+
+
+.p-name p{
+    margin-top: 5px;
+}
+
+
+.followers-details{
+    margin-left: 0px;
+    margin-top: 30px;
+    display:flex;
+    align-items: center;   
+    justify-content: center;
+}
+
+
+.followers-details a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.posts-no , .followers-no , .following-no{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 9px;
+    color: black; 
+}
+
+
+.posts-no h2 , .followers-no h2, .following-no h2{
+    text-align: center;
+    color:black;
+    font-size: 15px;
+    
+
+}
+
+
+
+.follow-div a{
+    text-decoration: none;
+    
+    
+    
+}
+
+
+.follow-div button{
+    text-decoration: none;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:50px;
+    height: 30px;
+    font-size: 10px;
+    font-family:monospace;
+    cursor: pointer;
+}
+
+
+.follow-div button:hover{
+    background-color: darkblue;
+    border: none;
+}
+
+
+.edit_profile-div {
+    margin-top: 30px;
+    
+}
+
+
+.edit_profile-div a{
+    text-decoration: none;
+}
+
+
+
+.edit_profile-div button{
+        text-decoration: none;
+        background-color: royalblue;
+        border: none;
+        outline: none;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:50px;
+        height: 40px;
+        font-size: 10px;
+        font-family:monospace;
+        cursor: pointer;
+        
+    }
+
+.edit_profile-div button:hover{
+    background-color: blue;
+   
+
+}
+
+
+.feeds-heading{
+    display: none
+    
+    
+}
+
+
+
+
+
+
+/* friendlist */
+
+
+
+.friendsdetails{
+    height: 680px;
+    padding: 50px 30px;
+    background-color: #ccc;
+    flex-basis: 40%;
+    overflow:auto;
+    
+}
+
+
+
+.following-titles{
+    display: flex;
+    
+    
+    
+}
+
+.following-titles p{
+    font-weight: bold;
+    margin-right: 110px;
+    color:darkblue;
+}
+
+
+.following-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.following-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color:royalblue;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+
+.following-links.active-link::after{
+    width:100%;
+}
+
+
+.following-contents{
+    display: none;
+}
+
+.following-contents.active-tab{
+    display:block;
+}
+
+.following-section h4 a{
+    color:black;
+}
+
+
+
+
+
+.following-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; /* Align items vertically at the center */
+}
+
+.following-section img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%; /* To make the image circular */
+    margin-right: 10px; /* Add some space between the image and the text */
+    border: 2px solid blue;
+}
+
+
+
+
+/* search */
+
+.search-header-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+
+.search_bar{
+    margin-left: 45px;
+    background-color: white;
+    height: 35px;
+    border-radius: 10px;
+    
+}
+
+.search_bar input{
+    width:200px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+
+.search-feed{
+    padding: 100px;
+    height: 720px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+.search-feed h6{
+    font-size: 20px;
+    color: gray;
+
+
+}
+
+.user-search-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-results{
+    margin-top: 5px;
+    margin-left: 30px;
+    width:100%;
+    height: 70px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding:20px;
+    background-color:white;
+
+}
+
+.search-results img{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.detail-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-section  h4 a{
+    margin-left: 20px;
+    color:black;
+} 
+
+
+.detail-section .name{
+    margin-left: 25px;
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+    
+
+}
+  
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+
+    
+    /* base header */
+    
+    #header-common{
+        background-color:#f2f2f2;
+        width:100%;
+        height:40px;
+        color: white;
+        position: fixed;
+        top: 0%;
+    }
+    
+    .header-container{
+        padding:10px 40px;
+    
+    }
+    
+    
+    
+    .common-header-section{
+        display: flex;
+    
+    }
+    
+    .go-back a{
+        text-decoration: none;
+        color:blue;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    
+    /* login register header */
+    
+    
+    .header-web{
+        background-color:#ccc;
+    }
+    
+    .logo-section {
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    
+    .logo-section h4{
+        color:royalblue;
+        font-size: 25px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+    
+    
+    /* login */
+    
+    #login{
+        background-color:#ccc;
+        /*background-image: url('../images/bg1.jpg');*/    background-size:cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-height: 620px;
+        
+    }
+    
+    
+    
+    #login .container{
+        padding: 10px;
+        width:320px;
+        height:250px;
+        background-color: white;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    
+    .login-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .login-form .fields{
+        display: flex;
+        justify-content: center;
+        margin-top:5px;
+        align-items: center;
+    }
+    
+    
+    .login-form input{
+        width:250px;
+        height: 30px;
+        margin-bottom: 5px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        background-color:#f2f2f2;
+        color: black;
+        
+     
+    }
+    
+    
+    
+    
+    .login-heading{
+        padding-top: 10px;
+    
+    }
+    
+    
+    .login-heading h4{
+        font-size: 13px;
+        text-align:center;
+        color:royalblue;
+        font-family:cursive;
+    }
+    
+    
+    
+    .login-btn{
+        text-align: center;
+        margin-top:10px;
+        
+        
+    
+    }
+    
+    
+    
+    .login-btn button{
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color:royalblue;
+        color:white;
+        font-weight: 200;
+        cursor: pointer;
+        width:250px;
+        height:30px;
+        
+    }
+    
+    
+    
+    
+    .forgot-pswd {
+        margin: 12px;
+        text-align: right;
+        
+    }
+    
+    .forgot-pswd a{
+        text-decoration: none;
+        color:black;
+        
+    }
+    
+    .register-link{
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .register-link a{
+        color:royalblue;
+        text-decoration: none;
+    }
+    
+    
+    
+    /* register */
+    
+    #register{
+        background-color: #ccc;
+        background-size: cover;
+        display:flex;
+        align-items: center;
+        justify-content: center;  
+        min-height: 620px;
+    }
+    
+    #register .container{
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        width:310px;
+        height:400px;
+        background-color:white;
+        
+        
+    }
+    
+    .register-link{
+        text-align: center;
+    }
+    
+    .register-form{
+       
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 5px;   
+        
+    }
+    
+    
+    .register-form .fields{
+        display: flex;
+       justify-content:center;
+       align-items: center;
+        margin-top: 10px;
+        
+    }
+    
+    .register-form input{
+        margin-left: 10px;
+        width:280px;
+        height: 30px;
+        margin-bottom: 5px;
+        border: none;
+        padding: 10px;
+        background-color:#f2f2f2;
+        color: black;
+        
+    }
+    
+    
+    .reg-btn{
+        text-align: center;
+        margin-top:10px;
+        margin-left: 5px;
+        
+        
+    
+    }
+    
+    
+    
+    
+    
+    .reg-btn button{
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color:royalblue;
+        color:white;
+        font-weight: 200;
+        cursor: pointer;
+        width:280px;
+        height:30px;
+        
+    }
+    .register-link{
+        color: black;
+    }
+    
+    
+    /*home page*/
+    
+    
+    #header{
+        background-color:#f2f2f2;
+        width:100%;
+        height:60px;
+        color: white;
+        position: fixed;
+        z-index: 2;
+        
+            
+    }
+    
+    .container{
+        padding:10px 40px;
+    }
+    
+    
+    
+    
+    .logo-name h1{
+        color:#4169e1;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+    
+    
+    .header-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    
+    
+    
+    .search-bar{
+        
+        border-radius: 10px;
+        background-color:white;
+        
+        
+    }
+    
+    .search-bar ::placeholder{
+        color: #4169e1;
+    }
+    
+    .search-bar .fa{
+        color: royalblue;
+        margin-left:10px;
+    }
+    
+    
+    .search-bar input{
+        width:350px;
+        height:35px;
+        background: transparent;
+        border: none;
+        outline:none;
+        width:100%;
+        color: black;
+        border-radius: 10px;
+        margin-left:10px;
+        font-size: 15px;
+        padding: 10px;
+    
+    }
+    
+
+    .new-post-button{
+        display: block;
+    }
+    
+   
+    .new-post-button .post-btn{
+        border: none;
+        outline: none;
+        
+    
+    }
+    
+    
+    
+    .post-btn .fa{
+    
+        margin-left: 10px;
+        font-size: 20px;
+        color:royalblue;
+    
+    }
+    
+    
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    
+    */
+    
+    .success{
+        color: mediumaquamarine;
+        padding: 10px;
+        
+        
+    }
+    
+    .dp_image img{
+        width: 35px; /* Set the width of your button */
+        height: 35px; /* Set the height of your button */
+        cursor: pointer;
+        border-radius: 50px;
+        background-size:cover;
+        
+        
+    }
+    
+    /*
+    .bottom-dp-img{
+        
+        width: 30px; /* Set the width of your button 
+        height: 30px; /* Set the height of your button 
+        cursor: pointer;
+        border-radius: 50px;
+        background-size:cover;
+        
+        
+    }
+    
+    */
+    
+    
+    
+    /* account settings page*/
+    
+    .profile-settings{
+        margin:0;
+        padding: 80px 40px 40px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#ccc;
+        width:100%;
+        height: 680px;
+    }
+    
+    .profile-settings .container{
+        
+        padding:10px;
+        
+          
+    }
+    
+    
+    .heading{
+        color:blue;
+        font-size: 12px;
+        margin-right: 250px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    .account-form-div{
+        border-radius: 10px;
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        width:350px;
+        height: 250px;
+        background-color:white;
+        
+    }
+    
+    
+    
+    
+    
+    .account-form-div label{
+        font-size: 12px;
+        color: royalblue;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .account-form-div input{
+        height:40px;
+        border:none;
+        background-color: #f2f2f2;
+        padding:10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        outline: none;
+        color:black;
+    }
+    
+    .account-form-div textarea{
+        height:40px;
+        border:none;
+        background-color: #f2f2f2;
+        padding:10px;
+        border-radius: 10px;
+        outline: none;
+        color:black;
+    
+    }
+    
+    
+    
+    .dp-image-div{
+        background-color:white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        width:350px;
+        height: 90px;
+        border-radius: 10px;
+    }
+    
+    .dp-image-div label{
+        font-size: 12px;
+        color: royalblue;
+        margin-bottom: 10px;
+    }
+    
+    
+    .dp-image-div input{
+        border:none;
+        margin-bottom: 10px;
+        background-color: #f2f2f2;
+    }
+    
+    
+    
+    .gender-div{
+        background-color:white;
+        margin-top: 10px;
+        padding:20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        width:350px;
+        height: 60px;
+        border-radius: 10px;
+    }
+    
+    .gender-div label{
+        font-size: 15px;
+        color: royalblue;
+        margin-right: 10px;
+       
+        
+    }
+    
+    label ,#female,#male,#others{
+        color:black;
+        
+    }
+    
+    .submit-cancel-btn{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 20px; 
+        margin-right: 50px;  
+    }
+    
+    .submit-cancel-btn a{
+        text-decoration: none;
+        color:white;
+        
+    }
+    
+    
+    .submit-cancel-btn button{
+        background-color: royalblue;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:60px;
+        height: 30px;
+        margin-right: 10px;
+        color:white;
+        
+    }
+    
+    
+    .submit-cancel-btn button:hover{
+    
+        background-color:blue;
+        cursor: pointer;
+        color:white;
+    }
+    
+    
+    
+    
+    
+    /* password settings section*/
+    
+    .privacy-settings{
+        margin:0;
+        padding:80px;
+        background-color: #ccc;
+        color:black;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .password-heading{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    
+    
+    .privacy-form-div{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+        background-color:white;
+        
+    }
+    
+    
+    
+    .privacy-form-div label{
+        color: royalblue;
+        margin-top: 10px;
+    }
+    
+    
+    .privacy-form-div input{
+        margin-top: 10px;
+        background-color: #f2f2f2;
+        width: 300px;
+        height: 30px;
+        padding: 20px;
+        color: black;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .rules h4{
+        margin-left: 20px;
+        text-align:left;
+        font-size: 12px;
+        font-weight: 300;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    
+    
+    /* add-post-form */
+    
+    
+    .new-post-form{
+        margin: 0;
+        padding:70px;
+        background-color:#ccc;
+        min-height: 720px;
+        display: flex;
+        justify-content:center;
+    }
+    
+    
+    .add-post-form{
+        width:350px;
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+        border-radius: 20px;
+        background-color: white;
+    
+    }
+    
+    .post-form h1{
+        color: blue;
+        font-size: 20px;
+        margin-bottom: 20px;
+    
+    }
+    
+    
+    .add-post-form label{
+        color: royalblue;
+        margin-bottom: 10px;
+       
+        
+    
+    }
+    
+    
+    .add-post-form input{
+        border:none;
+        outline:none;
+        width:100%;
+        height: 40px;
+        background-color: #f2f2f2;
+        padding:10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        color: black;
+    }
+    
+    
+    .add-post-form textarea{
+        background-color: #f2f2f2;
+        width:100%;
+        border-radius: 10px;
+        border: none;
+        padding:10px;
+        color: black;
+        margin-top: 20px;
+    }
+    
+    .share-btn{
+        margin-top: 20px;
+        background-color:blue;
+        color:white;
+        padding: 10px;
+        border:none;
+        border-radius: 20px;
+        height: 30px;
+        font-size: 15px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    .share-btn:hover{
+        cursor: pointer;
+        background-color: darkblue;
+    
+        
+    }
+    
+    .cancel-btn{
+        margin-top: 20px;
+        background-color:#ccc;
+        padding: 10px;
+        border:none;
+        border-radius: 20px;
+        height: 30px;
+        font-size: 15px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:black;
+        
+    
+    }
+    
+    .cancel-btn a{
+        text-decoration: none;
+        
+    
+    }
+    
+    
+    .cancel-btn:hover{
+        cursor: pointer;
+    
+        
+    }
+    
+    
+    
+    /* posts section */
+    
+    .body-section{
+        background-color:#ccc;
+        display: flex;
+        flex-direction: column;
+        min-height: 800px;
+        
+        
+    }
+    
+    #posts{
+        margin-top:80px;
+        padding: 1px;
+        overflow: scroll;
+        padding-bottom: 70px;
+       
+    }
+    
+    #posts:hover{
+        overflow: auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .posts-section{
+        display: flex;
+        flex-direction: column;
+        font-style: italic;
+        margin-left: 0;
+        
+    }
+    
+    
+    
+    
+    .user-suggestion-section{
+        display: none;
+       
+        
+        
+    }
+    /*
+    .user-suggestions-div{
+        margin-top:130px;
+        width:350px;
+        min-height:400;
+        background-color:white;
+       
+    }
+        
+    
+    .user-suggestion-header{
+        padding:10px;
+        background-color:royalblue;
+        height: 50px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+        
+    
+    }
+    
+    .user-suggestion-header h4{
+        margin-left: 20px;
+        color:white;
+        font-size: 17px;
+        
+    }
+    
+    
+    .user-suggestions-body{
+        padding:15px 40px 40px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .suggestions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+    }
+    
+    
+    .user-suggestions{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .user-suggestions .user-name{
+        margin-left: 10px;
+        color:black;
+    }
+    
+    
+    .user-suggestions img{
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+    
+    }
+    
+    
+    
+    */
+    
+      
+    .nav-items .fa{
+        display: none;
+    }
+    
+    
+    #bottom-nav{
+        width:100%;
+        height:50px;
+        display:none;
+        padding:10px;
+        background-color:royalblue ; 
+        position: fixed;  
+        bottom: 0;
+    }
+    
+    #bottommenu{
+        list-style: none;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+         
+    }
+    
+    #bottommenu li{
+        margin-left: 10px;
+        margin-right: 10px;
+    
+      
+    }
+    
+    #bottommenu li a{
+        
+        color:white;
+    }
+    
+    #bottommenu .fa{
+        font-size: 20px;
+    }
+    
+    
+    
+    .card{
+        width:370px;
+        margin-bottom: 5px;
+        background-color:#f2f2f2;
+        text-align: center;
+        
+        
+    }
+    
+    
+    .card-header{
+        display: flex;
+        flex-direction: row;
+        padding:10px;
+        border-radius: 0;
+        
+    }
+    
+    
+    
+    
+    
+    .card-header .post-dp-img{
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+    
+    }
+    
+    .name-location-div{
+       display:flex;
+       flex-direction: column;
+       justify-content: left;
+       padding-left: 13px;
+       
+    }
+    
+    .name-location-div h4{
+        text-align: left;
+        color: black;
+        font-size: 10px;
+        margin-left: 5px;
+    
+    }
+    
+    
+    .profile-name{
+        width:500px;
+        margin-bottom: 4px;
+        text-align: left;
+        margin-right: 8px;
+        
+    
+        
+    }
+     
+    .profile-name a{
+        text-decoration: none;
+        color:royalblue;
+    }
+    
+    
+    
+    
+    
+    .profile-name span{
+        border:1px solid black;
+        color:white;
+        margin-left: 10px;
+        padding:5px;
+        border-radius: 5px;
+       
+    
+    }
+    
+    
+    
+    .card img{
+        width:370px;
+        height:300px;
+       
+    
+    }
+    .actions{
+        width: 500px;
+        padding: 10px;
+        margin-bottom: 0;
+        text-align: left;
+    
+    }
+    
+    .actions-section{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 150px;
+    }
+
+    .actions-section a{
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        
+       
+    }
+    
+    
+    
+    .actions-section button {
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        
+        
+    }
+    
+    
+    
+    
+    .caption {
+        
+        margin-top: 10px;
+        font-size:15px;
+        text-align: left;
+        color: black;
+    }
+    
+    
+    /* js interactive features  - like post*/ 
+    
+    #like-post{
+        color:black;
+        margin-right:1px;
+    
+    }
+    
+    
+    
+    #like-post .liked{
+        color:red;
+    }
+    
+    
+    
+    .actions-section .fa{
+        font-size: 20px;
+        margin-right: -10px;
+    }
+    
+    
+    
+    .user-follow-div button{
+        text-decoration: none;
+        background-color: blue;
+        border: none;
+        outline: none;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:80px;
+        height: 20px;
+        font-size: 12px;
+        font-family:monospace;
+        cursor: pointer;
+    }
+    
+    
+    .user-follow-div button:hover{
+        background-color: darkblue;
+        border: none;
+    }
+    
+    /* profile */
+    
+    #profile-header{
+        background-color:#f9f9f9;
+        width:100%;
+        color: white;
+        position: fixed;
+        top: 0%;
+        z-index:3;
+    }
+    
+    .profile-header-container{
+        padding:10px 40px;
+        
+        
+    
+    }
+    
+    
+    
+    .profile-header-flex{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    
+    /* Style the dropdown content (hidden by default) */
+    
+    
+    .dropdown{
+        cursor: pointer;
+        margin-right: 40px;
+        color: darkblue;
+    }
+    
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 130px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        
+    }
+    
+    /* Style the links inside the dropdown */
+    .dropdown-content a {
+        background-color: #f9f9f9;
+        color: royalblue;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        
+        text-align: center;
+    
+    }
+    
+    /* Change color on hover */
+    .dropdown-content a:hover {
+        background-color: royalblue;
+        color: white;
+    }
+    
+
+    #user-posts{
+        margin-left: 300px;
+        flex-basis: 70%;
+        height: 100%;
+        overflow: hidden; 
+    }
+
+    #profile-page{
+       
+        padding: 80px 10px;
+    }
+
+    #profile{
+        width:300px;
+
+        min-height: 300px;
+    }
+        
+        
+        
+    
+    .profile-details{
+        justify-content: center;
+        display: flex;
+        flex-direction:column ;
+        align-items: center; 
+        padding: 5px;  
+    }
+
+
+
+    .profile-image img{
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+
+    }
+
+
+    .p-name{
+        font-size: 10px;
+        text-align: center;
+
+    }
+
+
+    .p-name p{
+        margin-top: 10px;
+    }
+
+
+    .followers-details{
+        margin-left: 15px;
+        margin-top: 30px;
+        display:flex;
+        align-items: center;   
+        justify-content: center;
+    }
+
+
+    .followers-details a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    .posts-no , .followers-no , .following-no{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 8px;
+        color: black; 
+    }
+
+
+    .posts-no h2 , .followers-no h2, .following-no h2{
+        text-align: center;
+        color:black;
+        font-size: 15px;
+        
+        
+
+    }
+
+
+    .follow-div{
+        
+        margin-top: 30px;
+    }
+
+    .follow-div a{
+        text-decoration: none;
+        
+        
+        
+    }
+
+
+    .follow-div button{
+        text-decoration: none;
+        background-color: blue;
+        border: none;
+        outline: none;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:200px;
+        height: 30px;
+        font-size: 12px;
+        font-family:monospace;
+        cursor: pointer;
+    }
+
+
+    .follow-div button:hover{
+        background-color: darkblue;
+        border: none;
+    }
+
+
+    .edit_profile-div {
+        margin-top: 30px;
+        
+    }
+
+
+    .edit_profile-div a{
+        text-decoration: none;
+    }
+
+
+
+    .edit_profile-div button{
+            text-decoration: none;
+            background-color: royalblue;
+            border: none;
+            outline: none;
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width:200px;
+            height: 40px;
+            font-size: 12px;
+            font-family:monospace;
+            cursor: pointer;
+            
+        }
+
+    .edit_profile-div button:hover{
+        background-color: blue;
+    
+
+    }
+
+    
+    .feeds-heading{
+        display: none
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    /* friendlist */
+    
+    
+    
+    .friendsdetails{
+        height: 680px;
+        padding: 50px 30px;
+        background-color: #ccc;
+        flex-basis: 40%;
+        overflow:auto;
+        
+    }
+    
+    
+    
+    .following-titles{
+        display: flex;
+        
+        
+        
+    }
+    
+    .following-titles p{
+        font-weight: bold;
+        margin-right: 110px;
+        color:darkblue;
+    }
+    
+    
+    .following-links{
+        margin-right:50px;
+        font-size:18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        
+    }
+    
+    .following-links::after{
+        content:'';
+        width:0;
+        height:3px;
+        background-color:royalblue;
+        position:absolute;
+        left:0;
+        bottom:-6px;
+        transition: 0.5s;
+    }
+    
+    .following-links.active-link::after{
+        width:100%;
+    }
+    
+    
+    .following-contents{
+        display: none;
+    }
+    
+    .following-contents.active-tab{
+        display:block;
+    }
+    
+    .following-section h4 a{
+        color:black;
+    }
+    
+    
+    
+    
+    
+    .following-section {
+        margin-top: 20px;
+        display: flex;
+        align-items: center; /* Align items vertically at the center */
+    }
+    
+    .following-section img {
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+        border-radius: 50%; /* To make the image circular */
+        margin-right: 10px; /* Add some space between the image and the text */
+        border: 2px solid blue;
+    }
+    
+    
+    
+      
+    
+    }
+    
+    

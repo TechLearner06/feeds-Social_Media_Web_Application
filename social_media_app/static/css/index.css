@@ -103,7 +103,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    min-height: 680px;
+    min-height: 720px;
     
 }
 
@@ -1737,7 +1737,7 @@ label ,#female,#male,#others{
     align-items: center;
     justify-content: center;
     color: white;
-    min-height: 620px;
+    min-height: 720px;
     
 }
 
@@ -3284,7 +3284,7 @@ label ,#female,#male,#others{
         align-items: center;
         justify-content: center;
         color: white;
-        min-height: 620px;
+        min-height: 720px;
         
     }
     
